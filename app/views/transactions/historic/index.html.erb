@@ -1,0 +1,23 @@
+<div>
+  <h1>teste</h1>
+  <%# iterar transctions %>
+  <table>
+  <thead>
+    <tr> 
+      <th>VALOR</th>
+      <th>TIPO</th>
+      <th>USUARIO</th>
+      <th>DATA E HORA</th>
+    </tr>
+  
+  </thead>
+    <% @transaction_logs.each do |transaction| %>
+      <tr>
+        <td><%= transaction.value %></td>
+        <td><%= transaction.type_transaction %></td>
+        <td><%= transaction.user_id %></td>
+        <td><%= transaction.created_at %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

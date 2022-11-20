@@ -1,0 +1,15 @@
+<div>
+  <%= form_with(url: transactions_transfer_index_path, method: :post, model: @transaction) do |f| %>
+    <div class="field">
+      <%= f.label :value_transaction %><br />
+      <%= f.number_field :value_transaction, autofocus: true %>
+    </div>
+    <div class="field">
+      <%= f.label :received_user_id %><br />
+      <%= f.number_field :received_user_id, autofocus: true %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Adicionar" %>
+    </div>
+  <% end %>
+</div>
