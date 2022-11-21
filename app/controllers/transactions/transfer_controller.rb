@@ -32,7 +32,7 @@ module Transactions
           user.amount          -= transaction_value
           received_user.amount += transaction_value
 
-          #salvando a transferencia com todos os dados
+          #salvando a transferencia 
           transaction.save!
           received_user.save!
           user.save!

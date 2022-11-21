@@ -1,11 +1,13 @@
 <div>
+  <h1>Depositar</h1>
   <%= form_with(url: transactions_deposit_index_path, method: :post, model: @transaction) do |f| %>
     <div class="field">
       <%= f.label :value_transaction %><br />
       <%= f.number_field :value_transaction, autofocus: true %>
     </div>
     <div class="actions">
-      <%= f.submit "Adicionar" %>
+      <%= f.submit "Confirmar", class: "btn btn-primary"%>
+      <%= link_to "Back", :back, class: "btn btn-dark" %>
     </div>
   <% end %>
 </div>

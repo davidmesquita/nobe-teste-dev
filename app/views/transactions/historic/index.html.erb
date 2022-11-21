@@ -1,16 +1,16 @@
 <div>
-  <h1>teste</h1>
+  <h1>Extrato</h1>
   <%# iterar transctions %>
   <table>
-  <thead>
-    <tr> 
-      <th>VALOR</th>
-      <th>TIPO</th>
-      <th>USUARIO</th>
-      <th>DATA E HORA</th>
-    </tr>
-  
-  </thead>
+    <thead>
+      <tr> 
+        <th>VALOR</th>
+        <th>TIPO</th>
+        <th>USUARIO</th>
+        <th>DATA E HORA</th>
+      </tr>
+    
+    </thead>
     <% @transaction_logs.each do |transaction| %>
       <tr>
         <td><%= transaction.value %></td>
@@ -20,4 +20,5 @@
       </tr>
     <% end %>
   </table>
+  <%= link_to "Back", :back, class: "btn btn-dark" %>
 </div>

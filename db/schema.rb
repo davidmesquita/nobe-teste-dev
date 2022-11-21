@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2022_11_19_172416) do
     t.bigint "user_id"
     t.string "received_user_id"
     t.string "transaction_type"
+    t.string "sender_user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_transactions_on_user_id"

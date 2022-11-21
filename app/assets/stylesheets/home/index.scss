@@ -1,5 +1,24 @@
 @import "bootstrap";
 
-.content{
+.options{
+  display: grid;
+}
+.options a{
+  margin-bottom: 12px;
+  color: black;
+  background-color: rgb(177, 174, 174);
+  border: none;
   
+}
+.title_index{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.button_to {
+  margin: 12px;
 }

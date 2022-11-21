@@ -1,4 +1,5 @@
 <div>
+  <h1>Transferir</h1>
   <%= form_with(url: transactions_transfer_index_path, method: :post, model: @transaction) do |f| %>
     <div class="field">
       <%= f.label :value_transaction %><br />
@@ -9,7 +10,8 @@
       <%= f.number_field :received_user_id, autofocus: true %>
     </div>
     <div class="actions">
-      <%= f.submit "Adicionar" %>
+      <%= f.submit "Confirmar", class: "btn btn-primary"%>
+      <%= link_to "Back", :back, class: "btn btn-dark" %>
     </div>
   <% end %>
 </div>
