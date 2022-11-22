@@ -7,11 +7,7 @@ RSpec.describe Transactions::WithdrawController, :type => :controller do
       expect(response.status).to eq(200) 
     end
 
-    it "should if withdraw is empty" do
-      create(:transaction)
-      get :index
-      expect(assigns(:transaction))
-    end
+  
   end
   
 
