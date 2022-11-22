@@ -1,0 +1,5 @@
+example_id                                               | status | run_time        |
+-------------------------------------------------------- | ------ | --------------- |
+./spec/controller/transactions_controller_spec.rb[1:1:1] | failed | 0.00239 seconds |
+./spec/controller/user_controller_spec.rb[1:1:1]         | passed | 0.04929 seconds |
+./spec/controller/user_controller_spec.rb[1:1:2:1]       | failed | 0.07452 seconds |
