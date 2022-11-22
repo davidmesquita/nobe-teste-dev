@@ -1,5 +1,6 @@
-example_id                                               | status | run_time        |
--------------------------------------------------------- | ------ | --------------- |
-./spec/controller/transactions_controller_spec.rb[1:1:1] | failed | 0.00239 seconds |
-./spec/controller/user_controller_spec.rb[1:1:1]         | passed | 0.04929 seconds |
-./spec/controller/user_controller_spec.rb[1:1:2:1]       | failed | 0.07452 seconds |
+example_id                                                        | status | run_time        |
+----------------------------------------------------------------- | ------ | --------------- |
+./spec/controller/transactions/deposit_controller_spec.rb[1:1:1]  | passed | 0.04744 seconds |
+./spec/controller/transactions/transfer_controller_spec.rb[1:1:1] | passed | 0.00402 seconds |
+./spec/controller/transactions/withdraw_controller_spec.rb[1:1:1] | passed | 0.00665 seconds |
+./spec/controller/transactions/withdraw_controller_spec.rb[1:1:2] | failed | 0.00457 seconds |
