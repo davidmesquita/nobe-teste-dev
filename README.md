@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Descrição do Teste
 
-Things you may want to cover:
+A aplicação trata as movimentações que um cliente pode fazer ao chegar no caixa de um banco.
 
-* Ruby version
+## Bibliotecas
 
-* System dependencies
+### Frameworks
+[RubyOnRails](https://rubyonrails.org/)
 
-* Configuration
+### Bibliotecas de estilos
+[Bootstrap](https://github.com/twbs/bootstrap-rubygem) a biblioteca precisa da instalação do jquery-rails and popper_js
 
-* Database creation
+### Banco de dados
+[PostgreSQL](https://www.postgresql.org/)
 
-* Database initialization
 
-* How to run the test suite
+## Dependencias
 
-* Services (job queues, cache servers, search engines, etc.)
+Após clonar o projeto execute no terminal dentro da pasta do projeto
+```bash
+bundle install
+```
+Após terminar a instalação das gems, execute
+```bash
+rails db:migrate
+```
+depois de executar as migrações, execute
+```bash
+rails s
+```
+E acesse a rota
+```bash
+http://localhost:3000
+```
 
-* Deployment instructions
-
-* ...
